@@ -1,0 +1,9 @@
+.city {
+    background-color: blue;
+}
+
+body {
+    background-image: url("car.webp");
+    background-image: cover;
+    width: 120px;
+}
