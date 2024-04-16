@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in HTML</title>
+    <style>
+         :root {
+            --boxheight: 22px;
+            --boxwidht: 60px;
+        }
+        
+        .container {
+            display: flex;
+            gap: 23px;
+            justify-content: end;
+        }
+        
+        .box {
+            border: 2px solid black;
+            align-items: center;
+            height: var(--boxheight);
+            width: var(--boxwidht)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="box">Home</p>
+        <p class="box">Features</p>
+        <p class="box">About us</p>
+        <p class="box">Sign In</p>
+    </div>
+
+</body>
+
+</html>
