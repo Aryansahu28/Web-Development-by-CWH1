@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-color Nav Bar</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+         :root {
+            --color1: rgb(216, 11, 216);
+            --color2: rgb(84, 236, 13);
+            --color3: rgb(58, 200, 247);
+            --color4: rgb(245, 29, 65);
+        }
+        
+        .navbar {
+            margin-top: 12px;
+            align-self: end;
+        }
+        
+        ul li {
+            display: inline;
+            list-style-type: none;
+            padding: 23px;
+        }
+        
+        .list1 {
+            border: 2px solid var(--color1);
+            background-color: var(--color1);
+            height: 23px;
+            width: 23px;
+        }
+        
+        .list2 {
+            border: 2px solid var(--color2);
+            background-color: var(--color2);
+            height: 23px;
+            width: 23px;
+        }
+        
+        .list3 {
+            border: 2px solid var(--color3);
+            background-color: var(--color3);
+            height: 23px;
+            width: 23px;
+        }
+        
+        .list4 {
+            border: 2px solid var(--color4);
+            background-color: var(--color4);
+            height: 23px;
+            width: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="list1">Home</li>
+            <li class="list2">Sign up</li>
+            <li class="list3">Sign in</li>
+            <li class="list4">About us</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
