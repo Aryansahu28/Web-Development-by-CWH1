@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce a ball</title>
+    <style>
+        .container {
+            border: 2px solid blue;
+            width: 80vw;
+            height: 50vh;
+            background-color: blue;
+            position: absolute;
+        }
+        
+        .box {
+            position: absolute;
+            bottom: 0;
+            background-color: red;
+            border: 2px solid red;
+            border-radius: 42px;
+            width: 5vw;
+            height: 10vh;
+            animation-name: bounce;
+            animation-duration: 12s;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes bounce {
+            0% {
+                transform: translateY(-10vh);
+            }
+            25% {
+                transform: translateX(20vw) translateY(-25vh);
+            }
+            50% {
+                transform: translateX(40vw) translateY(0vh);
+            }
+            75% {
+                transform: translateX(60vw) translateY(-25vh);
+            }
+            100% {
+                transform: translateX(75vw) translateY(0vh);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>
