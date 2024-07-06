@@ -22,17 +22,18 @@
             border-radius: 42px;
             width: 5vw;
             height: 10vh;
-            animation-name: bounce;
+            /* animation-name: bounce;
             animation-duration: 12s;
-            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-timing-function: ease-in;
             animation-delay: 2s;
             animation-iteration-count: infinite;
+            animation-direction: alternate;
+             */
+            animation: bounceX 3s linear infinite, bounceY 1s ease-out infinite alternate;
         }
-        
+        /*         
         @keyframes bounce {
-            0% {
-                transform: translateY(-10vh);
-            }
+            0% {}
             25% {
                 transform: translateX(20vw) translateY(-25vh);
             }
@@ -44,6 +45,23 @@
             }
             100% {
                 transform: translateX(75vw) translateY(0vh);
+            } */
+        
+        @keyframes bounceX {
+            from {
+                left: 0;
+            }
+            to {
+                left: 100%;
+            }
+        }
+        
+        @keyframes bounceY {
+            from {
+                bottom: 0;
+            }
+            to {
+                bottom: 50%;
             }
         }
     </style>
